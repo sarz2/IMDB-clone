@@ -23,6 +23,7 @@
             <div class="container px-5 py-24 mx-auto flex flex-wrap">
                 <div class="flex flex-wrap -m-4">
                     <div class="p-4 lg:w-1/2 md:w-full">
+                    <a href="userratings/{{ Auth::id() }}">
                         <div class="bg-gray-100 flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
                             <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -30,24 +31,27 @@
                                 </svg>
                             </div>
                             <div class="flex-grow">
-                                <h2 class="text-gray-900 text-lg title-font font-medium "><a href="userratings/{{ Auth::id() }}">Your Reviews/Ratings</a></h2>
+                                <h2 class="text-gray-900 text-lg title-font font-medium ">Your Reviews/Ratings</h2>
                                 <p class="leading-relaxed text-base">See and edit all of your ratings and reviews.</p>
                             </div>
                         </div>
+                    </a>
                     </div>
                     <div class="p-4 lg:w-1/2 md:w-full">
-                        <div class="bg-gray-100 flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
-                            <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
+                        <a href="user/user-settings">
+                            <div class="bg-gray-100 flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                                <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                                <div class="flex-grow mb-6">
+                                    <h2 class="text-gray-900 text-lg title-font font-medium">Settings</h2>
+                                    <p class="leading-relaxed text-base">Change the settings of your profile.</p>
+                                </div>
                             </div>
-                            <div class="flex-grow mb-6">
-                                <h2 class="text-gray-900 text-lg title-font font-medium"><a href="user/user-settings">Settings</a></h2>
-                                <p class="leading-relaxed text-base">Change the settings of your profile.</p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

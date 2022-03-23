@@ -140,7 +140,7 @@ class ReviewController extends Controller
             return redirect()->back()->with('status', "You have to fill in a rating for this movie!");
         } else {
         $review = Review::find($id);
-        $review->review_content = $request->input('title');
+        $review->title = $request->input('title');
         $review->review_content = $request->input('content');
         $review->review_rating = $request->input('movie_rating');
         $review->movie_id = $request->input('movie_id');
