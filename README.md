@@ -1,5 +1,6 @@
 # IMDB-clone
 This project is a clone of the IMDB website where its possible to view and browse movies, sign up as a user, rate movies and add movies to your own personal watchlist.
+See the live version here [IMDB-clone](https://imdb-clone-u05-g4.herokuapp.com/)
 
 ## Installation
 1. Run Composer
